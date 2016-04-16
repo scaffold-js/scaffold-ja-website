@@ -16,3 +16,8 @@ body {
 .page-title {
   outline: none;
 }
+
+paper-icon-button.giant {
+	width: 128px;
+	height: 128px;
+}

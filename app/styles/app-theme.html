@@ -27,16 +27,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   :root {
     --primary-text-color: var(--paper-grey-900);
-    --primary-background-color: #ffffff;
-    --secondary-text-color: #737373;
-    --disabled-text-color: #9b9b9b;
-    --divider-color: #dbdbdb;
-    --primary-color: var(--paper-orange-500);
-    --light-primary-color: var(--paper-orange-100);
-    --dark-primary-color: var(--paper-orange-700);
-    --accent-color: var(--paper-pink-a200);
-    --light-accent-color: var(--paper-pink-a100);
-    --dark-accent-color: var(--paper-pink-a400);
+    --primary-background-color: var(--paper-grey-50);
+    --secondary-text-color: var(--paper-grey-600);
+    --disabled-text-color: var(--paper-grey-500);
+    --divider-color: var(--paper-grey-400);
+    --primary-color: var(--paper-blue-grey-500);
+    --light-primary-color: var(--paper-blue-grey-100);
+    --dark-primary-color: var(--paper-blue-grey-700);
+    --accent-color: var(--paper-orange);
+    --light-accent-color: var(--paper-orange-100);
+    --dark-accent-color: var(--paper-orange-700);
 
     /* Components */
 
@@ -73,6 +73,21 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   paper-scroll-header-panel {
     height: 100%;
+    background-color: var(--paper-grey-200, #eee);
+    --paper-scroll-header-panel-full-header: {
+      background-image: url(../images/header.jpg);
+    }
+
+    /* background for toolbar when it is condensed */
+    --paper-scroll-header-panel-condensed-header: {
+      background-color: var(--primary-color);
+    }
+  }
+
+  paper-toolbar {
+    /* custom toolbar height */
+    background-color: transparent;
+    overflow: visible;
   }
 
   paper-menu {
