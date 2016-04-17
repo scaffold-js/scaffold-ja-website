@@ -13,7 +13,7 @@ then
   deploy_ghpages () {
     # Deploying to GitHub Pages! (http://polymerelements.github.io/polymer-starter-kit)
     echo Deploying to GitHub Pages
-    sed -i.tmp "s/\/\/ app.baseUrl = '\/polymer-starter-kit/app.baseUrl = '\/polymer-starter-kit/" app/scripts/app.js
+    sed -i.tmp "s/\/\/ app.baseUrl = '\/polymer-starter-kit/app.baseUrl = '\/scaffold-js.github.io/" app/scripts/app.js
     sed -i.tmp2 "s/<\/head>/\  \<script>'https:'!==window.location.protocol\&\&(window.location.protocol='https')<\/script>&/g" app/index.html
     gulp build-deploy-gh-pages
     # Undoing Changes to PSK for GitHub Pages
@@ -43,7 +43,7 @@ then
   }
 
   deploy_ghpages
-  deploy_firebase
+#  deploy_firebase
 
   # Revert to orginal index.html and delete temp file
   cp app/index.html.tmp1 app/index.html

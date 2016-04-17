@@ -21,3 +21,15 @@ paper-icon-button.giant {
 	width: 128px;
 	height: 128px;
 }
+
+.requirement {
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	max-width: 500px;
+}
+
+.requirement paper-card,
+.requirement .layout {
+	width: 100%;
+}
