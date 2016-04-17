@@ -3,7 +3,7 @@ set -o pipefail
 
 if [ "$TRAVIS_BRANCH" = "master" ] && [ "$TRAVIS_PULL_REQUEST" = "false" ]  && [ "$TRAVIS_NODE_VERSION" = "5.1" ]
 then
-  git config --global user.email "samccone@gmail.com"
+  git config --global user.email "$DEPLOY_EMAIL"
   git config --global user.name "auto deployer"
 
   # Stamp index.html with the date and time of PSK's deploying
