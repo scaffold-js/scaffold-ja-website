@@ -43,7 +43,7 @@ then
   }
 
   deploy_ghpages
-#  deploy_firebase
+  deploy_firebase
 
   # Revert to orginal index.html and delete temp file
   cp app/index.html.tmp1 app/index.html
