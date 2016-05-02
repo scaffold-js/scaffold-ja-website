@@ -136,7 +136,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 										<a href="http://bower.io" target="_blank"><paper-icon-button class="giant" src="http://bower.io/img/bower-logo.svg"></paper-icon-button></a>
 										<a href="http://lesscss.org" target="_blank"><paper-icon-button class="giant" src="images/less.png"></paper-icon-button></a>
 										<a href="https://jquery.com" target="_blank"><paper-icon-button class="giant" src="images/jquery.png"></paper-icon-button></a>
-										<a href="https://getbootstrap.com" target="_blank"><paper-icon-button class="giant" src="images/bootstrap.png"></paper-icon-button></a>
+										<a href="https://getbootstrap.com" target="_blank"><paper-icon-button class="giant square" src="images/bootstrap.png"></paper-icon-button></a>
+										<a href="https://bootswatch.com/" target="_blank"><paper-icon-button class="giant" src="images/bootswatch.png"></paper-icon-button></a>
 										<a href="https://angularjs.org" target="_blank"><paper-icon-button class="giant" src="images/angular.png"></paper-icon-button></a>
 										<a href="http://gulpjs.com" target="_blank"><paper-icon-button class="giant" src="images/gulpjs.png"></paper-icon-button></a>
 										<a href="http://jshint.com" target="_blank"><paper-icon-button class="giant" src="images/jshint.png"></paper-icon-button></a>
@@ -146,12 +147,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 									<div class="layout horizontal wrap center-justified">
 										<a href="https://github.com" target="_blank"><paper-icon-button class="giant" src="images/github.png"></paper-icon-button></a>
 										<a href="https://twitter.com" target="_blank"><paper-icon-button class="giant" src="images/twitter.png"></paper-icon-button></a>
-										<a href="https://facebook.com" target="_blank"><paper-icon-button class="giant" src="images/facebook.jpg"></paper-icon-button></a>
-										<a href="https://https://www.linkedin.com" target="_blank"><paper-icon-button class="giant" src="images/linkedin.png"></paper-icon-button></a>
-										<a href="https://plus.google.com/" target="_blank"><paper-icon-button class="giant" src="images/gplus.jpg"></paper-icon-button></a>
+										<a href="https://facebook.com" target="_blank"><paper-icon-button class="giant square" src="images/facebook.jpg"></paper-icon-button></a>
+										<a href="https://https://www.linkedin.com" target="_blank"><paper-icon-button class="giant square" src="images/linkedin.png"></paper-icon-button></a>
+										<a href="https://plus.google.com/" target="_blank"><paper-icon-button class="giant square" src="images/gplus.jpg"></paper-icon-button></a>
 									</div>
 									<h2>News</h2>
 									<p>4/17/2016 - Alpha 1 Released</p>
+									<p>4/30/2016 - Alpha 2 Released</p>
 									<h2>What is <strong>scaffold-js</strong>?</h2>
 									<p>
 										<strong>scaffold-js</strong> is an opionated <a href="http://yeoman.io">Yeoman generator</a> to create a full stack web page/application.
@@ -163,7 +165,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 								</paper-material>
 								<paper-material elevation="1">
 									<h3>A brief comparison of <strong>scaffold-.js</strong> and <strong>JHipster</strong></h3>
-									<vaadin-grid>
+									<vaadin-grid visible-rows="11">
 										<table>
 											<colgroup>
 												<col>
@@ -187,6 +189,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 												<tr><td>API Documentation</td><td>Swagger</td><td>Swagger</td></tr>
 												<tr><td>Client Framwork</td><td>Angular 1.5/Bootstrap</td><td>Angular 1.5/Bootstrap</td></tr>
 												<tr><td>Client Code Coverage</td><td>100%</td><td>~26%</td></tr>
+												<tr><td>Enity Generation</td><td><iron-icon icon="icons:check"></iron-icon></td><td><iron-icon icon="icons:check"></iron-icon></td></tr>
+												<tr><td>Multiple Themes</td><td><iron-icon icon="icons:check"></iron-icon></td><td><iron-icon icon="icons:clear"></iron-icon></td></tr>
 											</tbody>
 										</table>
 									</vaadin-grid>
@@ -233,7 +237,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 							<section data-route="roadmap" tabindex="-1">
 								<paper-material elevation="1">
 									<h1 class="page-title" tabindex="-1">Roadmap</h1>
-									<iron-accordions selected="0">
+									<iron-accordions selected="1">
 										<iron-accordion>
 											<h2 header>Alpha 1 - 4/17/2016</h2>
 											<a href="https://github.com/scaffold-js/generator-scaffold-js/releases/tag/alpha-1">https://github.com/scaffold-js/generator-scaffold-js/releases/tag/alpha-1</a>
@@ -252,11 +256,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 											<div>Spanish (machine translated)</div>
 										</iron-accordion>
 										<iron-accordion>
-											<h2 header>Alpha 2</h2>
+											<h2 header>Alpha 2 - 4/30/2016</h2>
 											<div>Replace jshint and defunct JSCS with ESLint</div>
-											<div>Document code</div>
+											<div>Document code - *Doc style waiting on gulp-jsdoc3 issue #17.</div>
 											<div>Entity generation</div>
-											<div>Ember client option</div>
 											<div>Optional Themes</div>
 											<div>Email Validation</div>
 										</iron-accordion>
@@ -267,7 +270,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 										</iron-accordion>
 										<iron-accordion>
 											<h2 header>Beta 1</h2>
-											<div>Integration/E2E testing</div>
+											<div>Integration/E2E testing of client app</div>
 										</iron-accordion>
 									</iron-accordions>
 								</paper-material>
@@ -305,6 +308,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 										<li><strong>Licence</strong>: Licence for the project.  Currently MIT and Apache-2.0 can be automatically generated. Used in <a href="https://docs.npmjs.com/files/package.json" target="_blank">package.json</a></li>
 										<li><strong>Project Homepage Url</strong>: Homepage of the project. Used in <a href="https://docs.npmjs.com/files/package.json" target="_blank">package.json</a></li>
 										<li><strong>Issue Tracker Url</strong>: Homepage of the project. Used in <a href="https://docs.npmjs.com/files/package.json" target="_blank">package.json</a></li>
+										<li><strong>Theme</strong>: Either the default Bootstrap theme or a choice of Bootswatch theme. See <a href="https://bootswatch.com/" target="_blank">https://bootswatch.com/</a> to view theme options.</li>
 										<li><strong>Social Logins</strong>: Optional social logins to support.  One or more of <em>GitHub</em>, <em>Twitter</em>, <em>Facebook</em>, <em>Google</em>, <em>Linkedin</em>.</li>
 									</ol>
 									<h3>Additional Setup</h3>
@@ -397,6 +401,39 @@ root
     |-- unit                            - unit test code - matches src directory layout
 |-- tls                                 - server certificates
 									</pre>
+								</paper-material>
+								<paper-material elevation="1">
+									<h3>Entities</h3>
+									<p>
+										<strong>scaffold-js</strong> includes an entity generator to perform the heavy lifting for adding entities to your project.
+										The entity generator performs the following tasks:
+									</p>
+									<ul>
+										<li>Generate a <a href="https://github.com/hapijs/joi" target="_blank">joi</a> model describing the entity.</li>
+										<li>Generate a <a href="http://hapijs.com" target="_blank">hapi</a> route for the entity.  The route supports CRUD operations on the entity and includes Swagger API documentation.</li>
+										<li>Gerarate an <a href="https://angularjs.org" target="_blank">AngularJS</a> component supporting all CRUD operations on the entity.</li>
+										<li>Generate unit tests for all of the above.</li>
+										<li>Add the entity to the Entity menu.</li>
+									</ul>
+									<p>
+										The entity generator is not intended to generate a final enity for your project.  It is intended to provide a framework you can build on.
+										It is expected that you will want to make modifications such as, adding support for more complex types, customizing authorization, and locating appropriately within your project.
+									</p>
+									<h3>Generate an Entity</h3>
+									<ol>
+										<li>Enter you project directory:  <strong>cd myproject</strong></li>
+										<li>Generate the entity:  <strong>yo scaffold-js:enity</strong></li>
+									</ol>
+									<h3>Generator Options</h3>
+									<ol>
+										<li><strong>Collection Name</strong>: Name for your entity. Used for the Mongo collection and throughout the entity for general naming considerations. Collection and Field names must be valid for use as JavaScript variables and Object properties. The following options are repeated for each field you want to add to the entity.</li>
+										<li><strong>Field Name</strong>: Name of a field/property to include in the entity.  Leaving this option blank ends adding fields and generates the entity.</li>
+										<li><strong>Field Type</strong>: Type of the field.  (Boolean, Date, Number, or String)</li>
+										<li><strong>Required</strong>: Is the field required for create/update?</li>
+										<li><strong>Minimum</strong>: For Date and Number fields, the minimum allowed value.  For Strings, the minimum string length</li>
+										<li><strong>Maximum</strong>: For Date and Number fields, the maximum allowed value.  For Strings, the maximum string length</li>
+										<li><strong>Integer</strong>: For Number fields indicates the number is an intiger value.</li>
+									</ol>
 								</paper-material>
 							</section>
 							<section data-route="production" tabindex="-1">

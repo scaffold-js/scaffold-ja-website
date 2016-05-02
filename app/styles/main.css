@@ -20,6 +20,14 @@ body {
 paper-icon-button.giant {
 	width: 128px;
 	height: 128px;
+	background-color: #eee;
+	border-radius: 64px;
+	margin: 2px;
+	padding: 14px;
+}
+
+paper-icon-button.giant.square {
+	padding: 30px;
 }
 
 .requirement {
@@ -32,4 +40,8 @@ paper-icon-button.giant {
 .requirement paper-card,
 .requirement .layout {
 	width: 100%;
+}
+
+.center-justified {
+	text-align: center;
 }
